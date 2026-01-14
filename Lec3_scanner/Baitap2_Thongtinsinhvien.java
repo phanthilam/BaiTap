@@ -6,7 +6,7 @@ public class Baitap2_Thongtinsinhvien {
 
     public static void main(String[] args) {
         Scanner thongtin = new Scanner(System.in);
-        
+
         System.out.print("Ho va ten: ");
         String ten = thongtin.nextLine();
 
