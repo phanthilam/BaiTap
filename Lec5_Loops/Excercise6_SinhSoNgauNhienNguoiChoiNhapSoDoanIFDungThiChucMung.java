@@ -21,5 +21,6 @@ public class Excercise6_SinhSoNgauNhienNguoiChoiNhapSoDoanIFDungThiChucMung {
                 System.out.println("Chuc mung!");
             }
         } while (a != b);
+        sc.close();
     }
 }
