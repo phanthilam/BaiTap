@@ -85,7 +85,7 @@ public class Baitap_hienthicacgiatriramanhinh {
         System.out.println();
 
         System.out.print("Mang sau khi dao nguoc la: ");
-        daonguoc(a, n);
+        daonguoc(a);
         xuatmang(a, n);
         System.out.println();
 
