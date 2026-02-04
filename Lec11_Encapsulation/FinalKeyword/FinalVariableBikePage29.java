@@ -2,9 +2,11 @@ package Lec11_Encapsulation.FinalKeyword;
 
 public class FinalVariableBikePage29 {
 
-    int speedlimit = 90;  //final là giá trị được gán cố định 1 lần không thay đổi nữa vậy nên bỏ final
+    //final int speedlimit = 90; gán giá trị cố định và không thể sửa nữa
+    int speedlimit = 90;  //bỏ final
 
     void run() {
+        //Hoặc  System.out.println(speedlimit); chỉ in ra bình thường
         speedlimit = 400;
     }
 

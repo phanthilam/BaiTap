@@ -5,7 +5,7 @@ import Lec11_Encapsulation.AccessModifier.test1.Rule5.AccessModifier1DifferentPa
 public class AccessModifier2DifferentPackageNonSubClassPage15 {
 
     public static void main(String[] args) {
-        AccessModifier1DifferentPackageNonSubClassPage15 obj = new AccessModifier1DifferentPackageNonSubClassPage15();
+        AccessModifier1DifferentPackageNonSubClassPage15 obj = new AccessModifier1DifferentPackageNonSubClassPage15(); // tạo đối tượng
         System.out.println(obj.getPvt());
         System.out.println(obj.getDf());
         System.out.println(obj.getPro());

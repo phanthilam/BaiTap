@@ -1,6 +1,7 @@
 package Lec11_Encapsulation.FinalKeyword;
 
-class FinalClassBikePage33 { //đóng không cho tạo thêm class con nếu dùng final
+//final class FinalClassBikePage33 //nếu dùng final thì không thể tạo thêm class con
+class FinalClassBikePage33 { //xoá final
 
     void run() {
         System.out.println("running");

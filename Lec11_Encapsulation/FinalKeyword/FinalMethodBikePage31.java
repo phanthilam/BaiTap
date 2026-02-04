@@ -1,16 +1,17 @@
 package Lec11_Encapsulation.FinalKeyword;
 
 public class FinalMethodBikePage31 {
-
-    void run() {
-        System.out.println("running"); //khai báo file không thể sửa nữa nên xoá final
+    
+    //final void run(){ Tạo một method không thể sữa chữa được
+    void run() {//xoá final
+        System.out.println("running"); 
     }
 }
 
 class Honda extends FinalMethodBikePage31 {
 
     @Override
-    void run() {
+    void run() { // sửa lại method của final nên là không được
         System.out.println("running safely with 100kmph");
     }
 
