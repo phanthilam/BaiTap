@@ -9,7 +9,7 @@ public class AccessModifier1SamePackageNonSubClassPage13 {
         return pvt;
     }
 
-    int df = 2; //default không phải là từ khoá
+    int df = 2; //default không phải là từ khoá nên không ghi 
     protected int pro = 3;
     public int pbl = 4;
 

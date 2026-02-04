@@ -1,6 +1,6 @@
 package Lec11_Encapsulation.Page567;
 
-public class EncapsulationExitsPage5 {
+public class EncapsulationExitsPage5 { // được tách ra từ code cũ trang 5
 
     public static void main(String[] args) {
         PersonPage5 a = new PersonPage5();

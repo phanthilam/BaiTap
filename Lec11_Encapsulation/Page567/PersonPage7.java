@@ -3,10 +3,10 @@ package Lec11_Encapsulation.Page567;
 public class PersonPage7 {
 
     public String name;
-    private double weight;
+    private double weight; //che giấu dữ liệu và không cho phép truy cập ừ bên ngoài class
 
     public void setWeight(double weight) {
-        if (weight < 0) {//nếu dùng this.weight có thể bị gán giá trị không hợp lệ
+        if (weight < 0) { //nếu dùng this.weight có thể bị gán giá trị không hợp lệ
             System.out.println("Weight can not negative");
         } else {
             this.weight = weight;

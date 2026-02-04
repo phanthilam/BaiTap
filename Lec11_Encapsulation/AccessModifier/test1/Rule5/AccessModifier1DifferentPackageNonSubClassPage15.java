@@ -28,5 +28,4 @@ public class AccessModifier1DifferentPackageNonSubClassPage15 {
         System.out.println(pro);
         System.out.println(pbl);
     }
-
 }

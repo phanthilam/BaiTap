@@ -10,7 +10,9 @@ public class AccessModifier1DifferentPackageSubClassPage14 {
     }
 
     int df = 2;
-
+    
+    
+    //thêm Getter
     public int getDf() {
         return df;
     }
