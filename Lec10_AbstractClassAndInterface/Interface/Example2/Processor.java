@@ -7,5 +7,4 @@ public class Processor {
         circle.drawShape();
         circle.fillColor();
     }
-
 }

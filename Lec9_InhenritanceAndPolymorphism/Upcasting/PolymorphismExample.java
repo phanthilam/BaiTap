@@ -7,7 +7,7 @@ public class PolymorphismExample {
         animal[0] = new Dog();
         animal[1] = new Cat();
         animal[2] = new Dog();
-        for ( int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             animal[i].makeSound();
         }
     }

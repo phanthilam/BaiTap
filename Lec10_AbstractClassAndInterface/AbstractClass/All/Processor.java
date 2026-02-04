@@ -7,5 +7,4 @@ public class Processor {
         dog.displayName();
         dog.makeSound();
     }
-
 }
