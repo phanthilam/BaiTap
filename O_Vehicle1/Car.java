@@ -1,4 +1,4 @@
-package O_Vehicle;
+package O_Vehicle1;
 
 import java.util.Scanner;
 
@@ -32,44 +32,50 @@ public class Car extends Vehicle {
         this.fuelType = fuelType;
     }
 
+    public Scanner getSc() {
+        return sc;
+    }
+
+    public void setSc(Scanner sc) {
+        this.sc = sc;
+    }
+
+    Scanner sc = new Scanner(System.in);
+
     @Override
     public void addVehicle() {
-        Scanner sc = new Scanner(System.in);
         super.addVehicle();
 
-        System.out.println("Enter vehicle numberOfSeats: ");
+        System.out.println("Enter vehicle NumberOfSeats: ");
         setNumberOfSeats(sc.nextInt());
         sc.nextLine();
 
-        System.out.println("Enter vehicle fuelType: ");
+        System.out.println("Enter vehicle FuelType: ");
         setFuelType(sc.nextLine());
 
         System.out.println("Car added successfully!");
     }
 
     @Override
-    public void updateVehicle(String id) {
-        if (getId().equals(id)) {
-            Scanner sc = new Scanner(System.in);
-            super.updateVehicle(id);
+    public void updateVehicle() {
+        super.updateVehicle();
 
-            System.out.println("Enter new vehicle numberOfSeats: ");
-            setNumberOfSeats(sc.nextInt());
-            sc.nextLine();
+        System.out.println("Update vehicle NumberOfSeats: ");
+        setNumberOfSeats(sc.nextInt());
+        sc.nextLine();
 
-            System.out.println("Enter new vehicle fuelType: ");
-            setFuelType(sc.nextLine());
+        System.out.println("Update vehicle FuelType: ");
+        setFuelType(sc.nextLine());
 
-            System.out.println("Car updated successfully!");
-        } else {
-            System.out.println("Not found ID: " + id);
-        }
+        System.out.println("Car updated successfully!");
     }
 
     @Override
     public void displayVehicle() {
         super.displayVehicle();
 
-        System.out.println("Number Of Seats: " + getNumberOfSeats() + ", Fuel Type: " + getFuelType());
+        System.out.println("NumberOfSeats: " + getNumberOfSeats()
+                + ", FuelType: " + getFuelType());
     }
+
 }

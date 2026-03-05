@@ -1,4 +1,4 @@
-package O_Vehicle;
+package O_Vehicle2;
 
 import java.util.ArrayList;
 
@@ -15,22 +15,20 @@ public class VehicleList {
     public void updateVehicleById(String id) {
         for (Vehicle vehicle : vehicleList) {
             if (vehicle.getId().equalsIgnoreCase(id)) {
-                vehicle.updateVehicle(id);
+                vehicle.updateVehicle();
                 return;
             }
         }
-        System.out.println("Not found ID: " + id);
+        System.out.println("Not found id: " + id);
     }
 
     public void deleteVehicleById(String id) {
-        for (Vehicle vehicle : vehicleList) {
-            if (vehicle.getId().equalsIgnoreCase(id)) {
-                vehicleList.remove(vehicle);
-                System.out.println("Delete ID: " + id);
-                return;
-            }
+        boolean delete = vehicleList.removeIf(vehicle -> vehicle.getId().equalsIgnoreCase(id));
+        if (delete) {
+            System.out.println("Delete the id" + id);
+        } else {
+            System.out.println("Not found id" + id);
         }
-        System.out.println("Not found ID: " + id);
     }
 
     public Vehicle findVehicleById(String id) {
@@ -39,13 +37,13 @@ public class VehicleList {
                 return vehicle;
             }
         }
-        System.out.println("Not found ID: " + id);
+        System.out.println("Not found id: " + id);
         return null;
     }
 
-    public void displayVehicle() {
+    public void displayAllVehicles() {
         if (vehicleList.isEmpty()) {
-            System.out.println("Empty!");
+            System.out.println("Empty");
         } else {
             for (Vehicle vehicle : vehicleList) {
                 vehicle.displayVehicle();

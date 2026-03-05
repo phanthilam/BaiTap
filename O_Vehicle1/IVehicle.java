@@ -1,10 +1,10 @@
-package O_Vehicle;
+package O_Vehicle1;
 
 public interface IVehicle {
 
     public void addVehicle();
 
-    public void updateVehicle(String id);
+    public void updateVehicle();
 
     public void displayVehicle();
 }
